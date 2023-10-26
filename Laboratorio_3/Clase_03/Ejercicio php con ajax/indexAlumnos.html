@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crud Alumnos</title>
+    <link rel="stylesheet" type="text/css" href="estiloIndexALumnos.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Formulario CRUD Alumnos</h1>
+        
+        <form action="./nexo_poo_foto.php" method="POST" enctype="multipart/form-data">
+            <h3>Agregar y Listar</h3>
+            <input class="ingresoNombre" type="text" name="Nombre" id="nombre" placeholder="Nombre">
+            <br>
+            <input class="ingresoApellido" type="text" name="Apellido" id="apellido" placeholder="Apellido">
+            <br>
+            <input type="number" name="Legajo" placeholder="Numero de Legajo">
+            <br>
+            <label class="titulo">Foto</label>
+            <input type="file" name="foto">
+            <br>
+            <input type="submit" name="boton" value="Agregar">
+            <br>
+            <input type="submit" name="boton" value="Listar">
+            <br> <br>
+            <h3>Verificar</h3>
+            <input type="number" name="LegajoVerificar" placeholder="Numero Legajo">
+            <input type="submit" name="boton" value="Verificar">
+            <h3>Modificar</h3>
+            <input type="number" name="LegajoModificar" placeholder="Numero Legajo">
+            <br>
+            <input type="text" name="nombreModificar" placeholder="Nombre">
+            <br>
+            <input type="text" name="apellidoModificar" placeholder="Apellido">
+            <br>
+            <input type="submit" name="boton" value="Modificar">
+            <br><br>
+            <h3>Eliminar</h3>
+            <input type="number" name="LegajoEliminar" placeholder="Legajo">
+            <input type="submit" name="boton" value="Eliminar">
+            <h3>Obtener</h3>
+            <input type="number" name="LegajoObtener" placeholder="Legajo obtener">
+            <input type="submit" name="boton" value="Obtener">
+            <h3>Redirigir</h3>
+            <input type="number" name="LegajoRedirigir" placeholder="Legajo Redirigir">
+            <input type="submit" name="boton" value="Redirigir">
+        </form>
+            
+        
+        
+    </div>
+    
+</body>
+</html>
